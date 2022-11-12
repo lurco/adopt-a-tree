@@ -126,3 +126,22 @@ $box-shadow: 0 toRem(4px) toRem(10px) rgba($black, 0.1);
 // VARIABLES: assets path
 
 $svg-path: "../svg/";
+
+// VARIABLES: media queries breakpoints
+$media-lg: toRem(1200px);
+$media-md: toRem(900px);
+$media-sm: toRem(600px);
+
+// VARIABLES: media queries breakpoints
+$media-lg-max: $media-lg - toRem(1px);
+$media-md-max: $media-md - toRem(1px);
+$media-sm-max: $media-sm - toRem(1px);
+
+// ----------------------
+// VARIABLES: grid column count
+
+$grid-column-count: 12;
+$grid-gutter: toRem(7.5px);
+$grid-gutter-sm: math.div($grid-gutter,2);
+$grid-gutter-lg: ($grid-gutter * 2);
+
