@@ -64,3 +64,36 @@
     border: toRem(1px) solid $color-focus;
     transition: $transition-linear;
 }
+
+// -------------------------------------------
+// FORMS: text inputs, text areas, selects
+
+// Form styling: text inputs, text areas, selects: Mixin
+// - All parameters have defaults
+// - Parameters:
+//  - $color {string} : Text color
+//  - $color-bg {string} : Background color
+// - $color-border {string} : Border color
+// - $color-placeholder {string} : Placeholder color
+
+@mixin form-text($color: $gray-coal, $color-bg: $white,
+$color-border: $color-input-border, $color-placeholder: $color-input-placeholder) {
+    color: $color;
+    background-color: $color-bg;
+    border: toRem(1px) solid $color-border;
+    border-radius: $border-radius;
+    font-size: $font-size-sm;
+    font-family: $font-family-1;
+    line-height: $line-height;
+    padding: $btn-padding-h $btn-padding-v-sm;
+    display: block;
+    width: 100%;
+    transition: $transition-linear;
+    @include input-placeholder {
+        color: $color-input-placeholder;
+    }
+}
+
+.form-text {
+    @include form-text;
+}
