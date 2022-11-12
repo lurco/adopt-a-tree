@@ -58,6 +58,7 @@ $line-height: 1.35;
 // FONTS: sizes
 $font-size: 14px;
 $font-size-sm: 12px;
+$font-size-xs: 10px;
 $font-size-lg: 16px;
 
 // FONTS: headings' sizes
@@ -93,5 +94,25 @@ $spacing-half: math.div($spacing, 2);
 
 // VARIABLES: transitions
 // Use for animations, hovers etc.
-$transition-linear: all ,2s linear;
+$transition-linear: all .2s linear;
 $transition-ease-in: all .2s ease-in;
+
+// --------------------
+// VARIABLES: border-radius
+// Use for buttons, tabs etc.
+$border-radius: toRem(10px);
+$border-radius-lg: $border-radius * 2;
+$border-radius-xl: $border-radius * 3;
+
+// VARIABLES: buttons
+// use for buttons, tabs etc
+$btn-padding-v: $spacing;
+$btn-padding-v-sm: $spacing-half;
+$btn-padding-v-xs: $spacing-half;
+$btn-padding-h: $spacing-3;
+$btn-padding-h-sm: math.div($spacing-3, 2);
+$btn-padding-h-xs: math.div($spacing-3, 2);
+
+// VARIABLES: box-shadow
+
+$box-shadow: 0 toRem(4px) toRem(10px) rgba($black, 0.1);
