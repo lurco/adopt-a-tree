@@ -1,6 +1,20 @@
 @import "./partials/variables";
+@import "./partials/grid";
 
-.content-block-overlay {
-    @extend .content-block;
-    background-color: rgba($brand-2, 0.5);
+$media-custom: toRem(411px);
+
+.container-custom {
+    @include container($media-custom);
+    padding-inline: 0;
 }
+
+.custom-banner {
+    @extend .banner;
+    min-height: toRem(276px);
+}
+
+//.content-block-overlay {
+//    @extend content-block;
+//    background-color: rgba($brand-2, 0.5);
+//}
+
