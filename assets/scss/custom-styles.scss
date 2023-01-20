@@ -8,13 +8,19 @@ $media-custom: toRem(411px);
     padding-inline: 0;
 }
 
+.h3-white {
+    @extend .h3;
+    color: $white;
+    font-weight: 600;
+}
+
 .custom-banner {
     @extend .banner;
     min-height: toRem(276px);
 }
 
-//.content-block-overlay {
-//    @extend content-block;
-//    background-color: rgba($brand-2, 0.5);
-//}
+.content-block-overlay {
+    @extend .overlay--card-banner;
+    background-color: rgba($brand-2, 0.5);
+}
 
